@@ -39,7 +39,7 @@
                                 <rect key="frame" x="40" y="223.5" width="295" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="IUS-cS-Lpc"/>
                                 </connections>

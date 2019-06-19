@@ -20,7 +20,6 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "logIn" else { return }
-        print("2")
         let welcomeVC = segue.destination as! WelcomeViewController
         welcomeVC.userName = userNameTextField.text
     }
@@ -51,7 +50,10 @@ class LoginViewController: UIViewController {
                   message: "Your password is \(password) 😉")
     }
     
-    @IBAction func unwindSegue(segue: UIStoryboardSegue) {}
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        userNameTextField.text = nil
+        passwordTextField.text = nil
+    }
     
 }
 
