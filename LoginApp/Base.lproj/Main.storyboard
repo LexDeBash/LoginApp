@@ -98,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXx-Yf-3yO">
-                                <rect key="frame" x="87.5" y="171" width="200" height="29"/>
+                                <rect key="frame" x="87.5" y="173" width="200" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="KyP-bv-LSo"/>
                                 </constraints>
@@ -107,7 +107,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-Fn-IVD">
-                                <rect key="frame" x="156" y="240" width="63" height="69.5"/>
+                                <rect key="frame" x="156" y="242" width="63" height="69.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="58"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -125,7 +125,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yHU-w9-Rtf" firstAttribute="bottom" secondItem="SXx-Yf-3yO" secondAttribute="bottom" multiplier="1 / 0.3" id="0QZ-nw-4vr"/>
+                            <constraint firstItem="yHU-w9-Rtf" firstAttribute="bottom" secondItem="SXx-Yf-3yO" secondAttribute="bottom" multiplier="3.3" id="0QZ-nw-4vr"/>
                             <constraint firstItem="SXx-Yf-3yO" firstAttribute="centerX" secondItem="v3H-6K-bK2" secondAttribute="centerX" id="5Zi-f4-kgj"/>
                             <constraint firstItem="lLb-Fn-IVD" firstAttribute="centerX" secondItem="v3H-6K-bK2" secondAttribute="centerX" id="ILQ-4F-hrR"/>
                             <constraint firstItem="dui-62-qyN" firstAttribute="centerX" secondItem="v3H-6K-bK2" secondAttribute="centerX" id="lpk-FG-WTt"/>
