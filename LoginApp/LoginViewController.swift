@@ -10,11 +10,11 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    // IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    // Private properties
+    // MARK: - Private properties
     private let userName = "User"
     private let password = "Password"
     
@@ -26,7 +26,6 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: IBActions
-
     @IBAction func logInPressed() {
         guard
             userNameTextField.text == userName,
