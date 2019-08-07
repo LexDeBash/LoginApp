@@ -10,14 +10,15 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    private let userName = "User"
-    private let password = "Password"
-    
+    // IB Outlets
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    // MARK: Navigation
+    // Private properties
+    private let userName = "User"
+    private let password = "Password"
     
+    // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "logIn" else { return }
         let welcomeVC = segue.destination as! WelcomeViewController
@@ -57,8 +58,8 @@ class LoginViewController: UIViewController {
     
 }
 
+// MARK: - Alert Controller
 extension LoginViewController {
-    
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
@@ -70,7 +71,6 @@ extension LoginViewController {
 }
 
 // MARK: Text Field Delegate
-
 extension LoginViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
