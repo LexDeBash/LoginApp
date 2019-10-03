@@ -18,6 +18,11 @@ class LoginViewController: UIViewController {
     private let userName = "User"
     private let password = "Password"
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        passwordTextField.enablesReturnKeyAutomatically = false
+    }
+    
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "logIn" else { return }
