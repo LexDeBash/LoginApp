@@ -15,8 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     // MARK: - Private properties
-    private let userName = "User"
-    private let password = "Password"
+    private let userData = UserData.getUserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +32,8 @@ class LoginViewController: UIViewController {
     // MARK: IBActions
     @IBAction func logInPressed() {
         guard
-            userNameTextField.text == userName,
-            passwordTextField.text == password
+            userNameTextField.text == userData.user,
+            passwordTextField.text == userData.password
         else {
             showAlert(title: "Invalid login or password",
                       message: "Please, enter correct login and password",
@@ -47,12 +46,12 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotUserNamePressed() {
         showAlert(title: "Oops!",
-                  message: "Your name is \(userName) 😉")
+                  message: "Your name is \(userData.user) 😉")
     }
     
     @IBAction func forgotPasswordPressed() {
         showAlert(title: "Oops!",
-                  message: "Your password is \(password) 😉")
+                  message: "Your password is \(userData.password) 😉")
     }
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {

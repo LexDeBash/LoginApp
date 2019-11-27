@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A86D18D3238E501300880073 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D18D2238E501300880073 /* UserData.swift */; };
 		A878C8A622BA308000310910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878C8A522BA308000310910 /* AppDelegate.swift */; };
 		A878C8A822BA308000310910 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878C8A722BA308000310910 /* LoginViewController.swift */; };
 		A878C8AB22BA308000310910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A878C8A922BA308000310910 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A86D18D2238E501300880073 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		A878C8A222BA308000310910 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A878C8A522BA308000310910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A878C8A722BA308000310910 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A878C8A522BA308000310910 /* AppDelegate.swift */,
 				A878C8A722BA308000310910 /* LoginViewController.swift */,
 				A878C8B722BA312F00310910 /* WelcomeViewController.swift */,
+				A86D18D2238E501300880073 /* UserData.swift */,
 				A878C8A922BA308000310910 /* Main.storyboard */,
 				A878C8AC22BA308100310910 /* Assets.xcassets */,
 				A878C8AE22BA308100310910 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86D18D3238E501300880073 /* UserData.swift in Sources */,
 				A878C8B822BA312F00310910 /* WelcomeViewController.swift in Sources */,
 				A878C8A822BA308000310910 /* LoginViewController.swift in Sources */,
 				A878C8A622BA308000310910 /* AppDelegate.swift in Sources */,
