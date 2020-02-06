@@ -25,7 +25,8 @@ class LoginViewController: UIViewController {
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "logIn" else { return }
-        let welcomeVC = segue.destination as! WelcomeViewController
+        let tabBarController = segue.destination as! UITabBarController
+        let welcomeVC = tabBarController.viewControllers?.first as! WelcomeViewController
         welcomeVC.userName = userNameTextField.text
     }
     
