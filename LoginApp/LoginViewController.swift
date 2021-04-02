@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let welcomeVC = segue.destination as! WelcomeViewController
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.user = user
     }
     
@@ -34,8 +34,6 @@ class LoginViewController: UIViewController {
             )
             return
         }
-        
-        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
     
     @IBAction func forgotRegisterData(_ sender: UIButton) {
@@ -45,13 +43,13 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
-        userNameTextField.text = nil
-        passwordTextField.text = nil
+        userNameTextField.text = ""
+        passwordTextField.text = ""
     }
     
 }
 
-// MARK: - Alert Controller
+// MARK: - Private Methods
 extension LoginViewController {
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -63,7 +61,7 @@ extension LoginViewController {
     }
 }
 
-// MARK: - Work with keyboard
+// MARK: - Alert Controller
 extension LoginViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -75,6 +73,7 @@ extension LoginViewController: UITextFieldDelegate {
             passwordTextField.becomeFirstResponder()
         } else {
             logInPressed()
+            performSegue(withIdentifier: "showWelcomeVC", sender: nil)
         }
         return true
     }
